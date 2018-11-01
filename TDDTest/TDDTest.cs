@@ -50,5 +50,14 @@ namespace TDDTest
 
             Assert.Equal(expectedVal, actualVal);
         }
+
+        [Fact]
+        public void divideByZeroTest()
+        {
+            double num1 = 20, num2 = 0;
+            Program p = new Program();
+            
+            Assert.Throws<DivideByZeroException>(() => p.DivideTwoNumbers(num1, num2));
+        }
     }
 }
