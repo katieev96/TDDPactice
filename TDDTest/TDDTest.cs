@@ -39,5 +39,16 @@ namespace TDDTest
 
             Assert.Equal(expectedVal, actualVal);
         }
+
+        [Fact]
+        public void divideNumbersTest()
+        {
+            double num1 = 20, num2 = 10;
+            double expectedVal = 2;
+            Program p = new Program();
+            double actualVal = p.DivideTwoNumbers(num1, num2);
+
+            Assert.Equal(expectedVal, actualVal);
+        }
     }
 }
