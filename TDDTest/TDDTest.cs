@@ -28,7 +28,16 @@ namespace TDDTest
 
             Assert.Equal(expectedVal, actualVal);
         }
-        
-        
+
+        [Fact]
+        public void multiplyNumberTest()
+        {
+            double num1 = 5, num2 = 10;
+            double expectedVal = 50;
+            Program p = new Program();
+            double actualVal = p.MultiplyTwoNumbers(num1, num2);
+
+            Assert.Equal(expectedVal, actualVal);
+        }
     }
 }
